@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2015
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScrubClipboardText", "ScrubClipboardText\ScrubClipboardText.csproj", "{9E18C39A-877E-47B8-ABAC-B4E4FDA88659}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClipboardInfo", "ClipboardInfo\ClipboardInfo.csproj", "{46D1E722-1618-4308-84FA-16BFAA2DE744}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{9E18C39A-877E-47B8-ABAC-B4E4FDA88659}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E18C39A-877E-47B8-ABAC-B4E4FDA88659}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E18C39A-877E-47B8-ABAC-B4E4FDA88659}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46D1E722-1618-4308-84FA-16BFAA2DE744}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46D1E722-1618-4308-84FA-16BFAA2DE744}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46D1E722-1618-4308-84FA-16BFAA2DE744}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46D1E722-1618-4308-84FA-16BFAA2DE744}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
