@@ -1,10 +1,11 @@
 # MiniConsoleUtils
-A miscellaneous collection of simple command line utilities written in C#.
+
+A miscellaneous collection of simple command-line utilities for Windows.
 
 ## ClipboardInfo
 
-Returns basic information on the contents of the Windows clipboard.
+Retrieves basic information about the format of the current content on the Windows clipboard.
 
 ## ScrubClipboardText
 
-If the Windows clipboard contains formatted text, replaces said contents with plain text.
+Replaces formatted text in the Windows clipboard with plain text.
