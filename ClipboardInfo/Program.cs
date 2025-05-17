@@ -1,37 +1,32 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Windows;
+using System.Windows.Forms;
 
-namespace ClipboardInfo
+namespace ClipboardInfo;
+
+class Program
 {
-    class Program
+    [STAThread]
+    static void Main()
     {
-        [STAThread]
-        static void Main(string[] args)
+        IDataObject clipboardData = Clipboard.GetDataObject();
+
+        if (clipboardData == null)
         {
-            IDataObject clipboardData = Clipboard.GetDataObject();
+            Console.WriteLine("Clipboard is empty.");
+        }
+        else
+        {
+            Console.WriteLine("Clipboard contains the following formats:\n");
 
-            if (clipboardData == null)
+            foreach (var format in clipboardData.GetFormats(false))
             {
-                Console.WriteLine("Clipboard is empty.");
+                Console.WriteLine("    {0}", format);
             }
-            else
-            {
-                Console.WriteLine("Clipboard contains the following formats:\n");
-
-                foreach (var format in clipboardData.GetFormats(false))
-                {
-                    Console.WriteLine("    {0}", format);
-                }
-            }
+        }
 
 #if DEBUG
-            Console.Write("\nPress any key to quit.");
-            Console.ReadKey();
+        Console.Write("\nPress any key to quit.");
+        Console.ReadKey();
 #endif
-        }
     }
 }
