@@ -18,10 +18,5 @@ class Program
         {
             Console.WriteLine("Clipboard does not contain text.");
         }
-
-#if DEBUG
-        Console.Write("\nPress any key to quit.");
-        Console.ReadKey();
-#endif
     }
 }

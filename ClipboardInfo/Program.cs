@@ -23,10 +23,5 @@ class Program
                 Console.WriteLine("    {0}", format);
             }
         }
-
-#if DEBUG
-        Console.Write("\nPress any key to quit.");
-        Console.ReadKey();
-#endif
     }
 }
