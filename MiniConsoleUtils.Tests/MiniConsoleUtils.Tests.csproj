@@ -24,8 +24,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ClipboardInfo\ClipboardInfo.csproj" />
-    <ProjectReference Include="..\ScrubClipboardText\ScrubClipboardText.csproj" />
+    <ProjectReference Include="..\Get-ClipboardInfo\Get-ClipboardInfo.csproj" />
+    <ProjectReference Include="..\Scrub-ClipboardText\Scrub-ClipboardText.csproj" />
   </ItemGroup>
 
   <ItemGroup>

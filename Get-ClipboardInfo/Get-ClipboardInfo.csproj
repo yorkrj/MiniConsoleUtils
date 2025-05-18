@@ -1,14 +1,14 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0-windows</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <AssemblyName>Get-ClipboardInfo</AssemblyName>
+    <RootNamespace>Get_ClipboardInfo</RootNamespace>
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
-  
   <PropertyGroup Condition="'$(Configuration)'=='Release'">
     <DebugType>none</DebugType>
   </PropertyGroup>
-</Project>
+</Project> 

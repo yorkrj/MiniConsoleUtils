@@ -4,10 +4,10 @@ A collection of lightweight command-line utilities for Windows, built with .NET 
 
 ## Tools
 
-### ClipboardInfo
+### Get-ClipboardInfo
 Retrieves basic information about the format of the current content on the Windows clipboard.
 
-### ScrubClipboardText
+### Scrub-ClipboardText
 Replaces formatted text in the Windows clipboard with plain text.
 
 ## Development and Installation
@@ -46,5 +46,5 @@ dotnet build
 dotnet test
 
 # Run a specific tool
-dotnet run --project ClipboardInfo
+dotnet run --project Get-ClipboardInfo
 ```
