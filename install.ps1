@@ -20,8 +20,8 @@ if (Test-Path $publishDir) {
 }
 New-Item -ItemType Directory -Path $publishDir -Force | Out-Null
 
-# Get all project files
-$projects = Get-ChildItem -Path . -Filter "*.csproj" -Recurse
+# Get all project files, excluding test projects
+$projects = Get-ChildItem -Path . -Filter "*.csproj" -Recurse | Where-Object { -not $_.FullName.Contains(".Tests") }
 
 # Build and publish each project
 foreach ($project in $projects) {
@@ -48,12 +48,6 @@ foreach ($project in $projects) {
     $projectPublishDir = Join-Path $publishDir $projectName
     
     Copy-Item -Path "$projectPublishDir\*" -Destination $installDir -Force
-
-    # Copy only the necessary files
-    #Copy-Item -Path "$projectPublishDir\*.exe" -Destination $installDir -Force
-    #Copy-Item -Path "$projectPublishDir\*.dll" -Destination $installDir -Force
-    #Copy-Item -Path "$projectPublishDir\*.deps.json" -Destination $installDir -Force
-    #Copy-Item -Path "$projectPublishDir\*.runtimeconfig.json" -Destination $installDir -Force
 }
 
 # Add tools directory to PATH if not already present

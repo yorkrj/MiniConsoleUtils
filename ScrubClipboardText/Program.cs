@@ -1,22 +1,10 @@
-﻿using System;
-using System.Windows.Forms;
-
-namespace ScrubClipboardText;
+﻿namespace ScrubClipboardText;
 
 class Program
 {
     [STAThread]
     static void Main()
     {
-        if (Clipboard.ContainsText())
-        {
-            Clipboard.SetText(Clipboard.GetText(), TextDataFormat.Text);
-
-            Console.WriteLine("Text in clipboard has been scrubbed of formatting.");
-        }
-        else
-        {
-            Console.WriteLine("Clipboard does not contain text.");
-        }
+        Console.WriteLine(ClipboardScrubber.ScrubClipboardText());
     }
 }
