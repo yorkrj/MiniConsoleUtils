@@ -4,6 +4,9 @@ A collection of lightweight command-line utilities for Windows, built with .NET 
 
 ## Tools
 
+### Calculate
+A command-line calculator that evaluates mathematical expressions and automatically copies the result to the clipboard.
+
 ### Get-ClipboardInfo
 Retrieves basic information about the format of the current content on the Windows clipboard.
 
